@@ -21,8 +21,8 @@ jobs:
         cache: maven
     #- name: Maven Build
     #  run: mvn -B -DskipTests package
-    - name: NPM Build
-      run: npm install
+    #- name: NPM Build
+    #  run: npm install
     - name: Black Duck SCA Scan
       uses: blackduck-inc/black-duck-security-scan@v2
       env:
